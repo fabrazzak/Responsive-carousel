@@ -99,7 +99,7 @@ body .carousel-section .carousel .carousel-inner .carousel-item .card .card-cont
 body .carousel-section .carousel-nav {
   display: flex;
   justify-content: center;
-  gap: 2%;
+  gap: 40px;
   margin: 20px;
 }
 body .carousel-section .carousel-nav button {
@@ -108,7 +108,7 @@ body .carousel-section .carousel-nav button {
   background: rgba(255, 255, 255, 0.1);
   color: #fff;
   cursor: pointer;
-  font-size: 24px;
+  font-size: 18px;
   z-index: 10;
   width: 40px;
   height: 40px;
