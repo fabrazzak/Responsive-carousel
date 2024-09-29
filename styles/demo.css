@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@font-face {
+  font-family: "recoleta";
+  src: url("/font/Recoleta-Regular.ttf") format("ttf");
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #333;
+  background-color: rgb(0, 62, 51);
+  position: relative;
+  font-family: Poppins, sans-serif;
+}
+body .carousel-section {
+  margin-top: 10%;
+}
+body .carousel-section .carousel-header-info {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+body .carousel-section .carousel-header-info h2 {
+  color: rgba(248, 243, 240, 0.8);
+  font-family: recoleta, sans-serif;
+  font-size: 13px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid rgb(219, 161, 77);
+  border-radius: 39px;
+  background: rgba(219, 161, 77, 0.1);
+  margin-bottom: 15px;
+}
+body .carousel-section .carousel-header-info h1 {
+  color: rgb(248, 243, 240);
+  font-family: Poppins, sans-serif;
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+body .carousel-section .carousel {
+  width: 100%;
+  overflow: hidden;
+  margin: auto;
+}
+body .carousel-section .carousel .carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+body .carousel-section .carousel .carousel-inner .carousel-item {
+  box-sizing: border-box;
+}
+body .carousel-section .carousel .carousel-inner .carousel-item .card {
+  background-color: #fff;
+  border-radius: 10px;
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+body .carousel-section .carousel .carousel-inner .carousel-item .card .card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+body .carousel-section .carousel .carousel-inner .carousel-item .card .card-content .img-info {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+body .carousel-section .carousel .carousel-inner .carousel-item .card .card-content .img-info img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+body .carousel-section .carousel .carousel-inner .carousel-item .card .card-content .img-info .info {
+  display: flex;
+  flex-direction: column;
+}
+body .carousel-section .carousel .carousel-inner .carousel-item .card .card-content .img-info .info .rating {
+  color: rgb(255, 119, 0);
+  font-size: 18px;
+}
+body .carousel-section .carousel-nav {
+  display: flex;
+  justify-content: center;
+  gap: 2%;
+  margin: 20px;
+}
+body .carousel-section .carousel-nav button {
+  border: 1px solid rgba(248, 243, 240, 0.4);
+  border-radius: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  cursor: pointer;
+  font-size: 24px;
+  z-index: 10;
+  width: 40px;
+  height: 40px;
+  transition: background-color 0.3s;
+}
+body .carousel-section .carousel-nav button:hover {
+  background: rgb(0, 62, 51);
+}
+
+@media (min-width: 1200px) {
+  .bg-overlay {
+    background: linear-gradient(90deg, rgb(0, 62, 51) 10%, rgba(0, 62, 51, 0.71) 20%, rgba(0, 62, 51, 0) 30%, rgba(0, 62, 51, 0) 70%, rgba(0, 62, 51, 0.7) 80%, rgb(0, 62, 51) 87%);
+    position: absolute;
+    content: " ";
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+  .carousel-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    max-width: 1240px;
+  }
+  .carousel-section .carousel-inner .carousel-item {
+    min-width: 25%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .carousel-inner .carousel-item {
+    min-width: 33.33%;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .carousel-inner .carousel-item {
+    min-width: 50%;
+  }
+}
+@media (max-width: 575px) {
+  .carousel-inner .carousel-item {
+    min-width: 90%;
+  }
+}/*# sourceMappingURL=demo.css.map */
