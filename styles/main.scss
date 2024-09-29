@@ -1,32 +1,27 @@
+
+
+// Poppins font 
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+// local font 
 
 @font-face {
     font-family: 'recoleta';
     src: url('/font/Recoleta-Regular.ttf') format('ttf'),
-
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-    margin: 0;
-    padding: 0;
+// reset code 
 
-}
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 // Variables
-$title-color: rgb(248, 243, 240);
 
+$title-color: rgb(248, 243, 240);
 $font-color: #333;
 $card-bg-color: #fff;
 $border-radius: 10px;
@@ -35,9 +30,8 @@ $primary-font: Poppins, sans-serif;
 $secondary-font: recoleta, sans-serif;
 $btn-bg-color: rgba(255, 255, 255, 0.1);
 $bg-overlay-color: linear-gradient(90.00deg, rgb(0, 62, 51) 10%, rgba(0, 62, 51, 0.71) 20%, rgba(0, 62, 51, 0) 30%, rgba(0, 62, 51, 0) 70%, rgba(0, 62, 51, 0.7) 80%, rgb(0, 62, 51) 87%);
-
-// background color
 $body-bg-color: rgb(0, 62, 51);
+
 
 // Mixins
 @mixin flex-center($j-position , $a-position ) {
@@ -46,7 +40,7 @@ $body-bg-color: rgb(0, 62, 51);
     align-items: $a-position;
 }
 
-// Global Styles
+
 body {
     color: $font-color;
     background-color: $body-bg-color;
@@ -89,11 +83,11 @@ body {
             overflow: hidden;
             margin: auto;
 
-
             .carousel-inner {
                 display: flex;
                 transition: transform 0.5s ease-in-out;
 
+                // carousel item 
                 .carousel-item {
 
                     box-sizing: border-box;
@@ -146,6 +140,7 @@ body {
             }
         }
 
+        // carousel btn 
         .carousel-nav {
             display: flex;
             justify-content: center;
@@ -178,6 +173,7 @@ body {
 
 
 // Media Queries for responsive design
+
 @media (min-width: 1200px) {
 
     .bg-overlay {
@@ -195,7 +191,6 @@ body {
         @include flex-center(center, center);
         margin: auto;
         max-width: 1240px;
-        
 
         .carousel-inner {
             .carousel-item {
